@@ -17,15 +17,15 @@ let PORT = process.env.PORT || 3000;
 server.listen(PORT);
 
 // let urlMongo = "mongodb://localhost:27017/node_chat";
-let urlMongo = process.env.MONGODB_URI || "mongodb+srv://hoangduy:hoangduy@cluster0-a0ada.mongodb.net/trainingDB?retryWrites=true";
-mongoose.Promise = global.Promise;
-mongoose.set('useCreateIndex', true);
-mongoose.connect(urlMongo, { useNewUrlParser: true }).then(
-    (rs) => {
-        console.log('connect DataBase MongGo OK');
-    }
-)
-    .catch(connectError => connectError);
+// let urlMongo = process.env.MONGODB_URI || "mongodb+srv://hoangduy:hoangduy@cluster0-a0ada.mongodb.net/trainingDB?retryWrites=true";
+// mongoose.Promise = global.Promise;
+// mongoose.set('useCreateIndex', true);
+// mongoose.connect(urlMongo, { useNewUrlParser: true }).then(
+//     (rs) => {
+//         console.log('connect DataBase MongGo OK');
+//     }
+// )
+//     .catch(connectError => connectError);
 
 // let item = require('./models/item');
 // app.post('/new', async (req,res)=>{
